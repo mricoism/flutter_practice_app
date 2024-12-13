@@ -74,6 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
   void _incrementCounter() {
+    throw Exception();
     FirebaseCrashlytics.instance.crash();
     setState(() {
       // This call to setState tells the Flutter framework that something has
